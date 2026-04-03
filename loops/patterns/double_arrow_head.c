@@ -34,7 +34,10 @@ int main()
 					}
 				}
 
-					else{
+				}
+		}printf("\n");
+	}
+}
 
 
 
