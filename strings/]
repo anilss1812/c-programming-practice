@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdio_ext.h>
+
+int main()
+{
+	char str1[20];
+	char str2[20];
+	printf("Enter the string\n");
+	fgets(str1,20,stdin);
+	str1[strlen(str1)-1]='\0';
+	printf("Enter string to find\n");
+	fgets(str2,20,stdin);
+	str2[strlen(str2)-1]='\0';
+
+	char *ch=strstr(str1,str2);
+	printf("%d\n",ch-str1);
+}
