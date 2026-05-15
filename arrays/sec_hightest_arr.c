@@ -38,7 +38,7 @@ void shist(int* arr,const int size)
 			sh = fh;
 			fh = arr[i];
 		}	
-		else if(sh < arr[i] && sh != arr[i])
+		else if(sh < arr[i] && fh != arr[i])
 		{
 			sh = arr[i];
 		}
